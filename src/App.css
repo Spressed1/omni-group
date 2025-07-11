@@ -443,3 +443,138 @@ body, #root, .App {
   backdrop-filter: blur(4px) saturate(1.2);
   box-shadow: 0 4px 24px rgba(30,42,68,0.10);
 }
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation for mobile menu slide-in */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Section fade-in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations to sections */
+section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Hero section specific animation */
+#home {
+  animation: fadeInDown 1s ease-out;
+}
+
+/* Service cards staggered animation */
+.service-card {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Smooth transitions for navigation */
+.nav button {
+  transition: all 0.3s ease;
+}
+
+/* Backdrop blur for header */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Hover effects for service images */
+.service-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, img {
+  transition: all 0.3s ease;
+}
+
+/* Enhanced button hover effects */
+.cta-button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+/* Parallax effect for hero background */
+.hero-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Smooth section transitions */
+section {
+  scroll-margin-top: 80px; /* Account for fixed header */
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-bg {
+    background-attachment: scroll; /* Disable parallax on mobile */
+  }
+  
+  section {
+    scroll-margin-top: 60px;
+  }
+}
