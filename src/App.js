@@ -1,6 +1,11 @@
 import logo from './assets/logo.png';
 import logoWide from './assets/logo wide.png';
-import contactUs from './assets/contact.jpg';
+import favicon from './assets/favicon.ico';
+import homeBg from './assets/home.avif';
+import leadGenImg from './assets/lead-generatoin.avif';
+import salesOutsourcingImg from './assets/sales-outsourcing.avif';
+import customerSupportImg from './assets/customer-support.avif';
+import contactBg from './assets/contact.jpg';
 import { FaLinkedin, FaFacebook, FaTwitter, FaEnvelope, FaPhone, FaBars, FaTimes, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -140,13 +145,13 @@ function App() {
       {/* Main Content - Single Page Sections */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="home" className="relative min-h-[140vh] flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80")' }}>
+        <section id="home" className="relative min-h-[140vh] flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg" style={{ backgroundImage: `url(${homeBg})` }}>
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="relative z-10 text-center px-4 max-w-6xl mx-auto py-20">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-12 sm:mb-16 drop-shadow-lg">
-              Your Trusted Partner in <span className="text-[#ADD8E6]">Scalable Growth</span> and <span className="text-[#ADD8E6]">Seamless Operations</span>
+              Your Trusted Partner in <span className="text-[#044193]">Scalable Growth</span> and <span className="text-[#044193]">Seamless Operations</span>
             </h1>
-            <p className="text-base sm:text-xl text-center text-[#ADD8E6] mb-12 sm:mb-16 max-w-3xl mx-auto hidden sm:block leading-relaxed">
+            <p className="text-base sm:text-xl text-center text-white mb-12 sm:mb-16 max-w-3xl mx-auto hidden sm:block leading-relaxed">
               At Omni Group LLC, we don't just offer outsourcing—we become an extension of your business. With a team of skilled professionals, proven systems, and a commitment to excellence, we help you reduce costs, boost efficiency, and grow without limits.
             </p>
             {/* Mobile: Enhanced Accordion */}
@@ -226,7 +231,7 @@ function App() {
               <div className="flex flex-col lg:flex-row items-center gap-20">
                 <div className="lg:w-1/2">
                   <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+                    src={leadGenImg}
                     alt="Lead Generation" 
                     className="w-full h-80 object-cover rounded-2xl shadow-2xl service-image"
                   />
@@ -254,7 +259,7 @@ function App() {
               <div className="flex flex-col lg:flex-row-reverse items-center gap-20">
                 <div className="lg:w-1/2">
                   <img 
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                    src={salesOutsourcingImg}
                     alt="Sales Appointment Setting" 
                     className="w-full h-80 object-cover rounded-2xl shadow-2xl service-image"
                   />
@@ -285,7 +290,7 @@ function App() {
               <div className="flex flex-col lg:flex-row items-center gap-20">
                 <div className="lg:w-1/2">
                   <img 
-                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                    src={customerSupportImg}
                     alt="Customer Support" 
                     className="w-full h-80 object-cover rounded-2xl shadow-2xl"
                   />
@@ -313,7 +318,7 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-32 bg-white relative" style={{ backgroundImage: 'url("' + contactUs + '")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section id="contact" className="py-32 bg-white relative" style={{ backgroundImage: `url(${contactBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#12223a] mb-16">Contact Us</h2>
             <div className="bg-white rounded-2xl shadow-lg p-10 mb-16">
