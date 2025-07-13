@@ -144,7 +144,7 @@ function App() {
       {/* Main Content - Single Page Sections */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="home" className="relative min-h-[100vh] flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg" style={{ backgroundImage: `url(${homeBg})` }}>
+        <section id="home" className="relative min-h-[140vh] flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg" style={{ backgroundImage: `url(${homeBg})` }}>
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="relative z-10 px-4 max-w-6xl mx-auto py-20 w-full">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-12 sm:mb-16 drop-shadow-lg text-center">
