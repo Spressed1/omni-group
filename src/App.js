@@ -1,6 +1,5 @@
 import logo from './assets/logo.png';
 import logoWide from './assets/logo wide.png';
-import favicon from './assets/favicon.ico';
 import homeBg from './assets/home.avif';
 import leadGenImg from './assets/lead-generatoin.avif';
 import salesOutsourcingImg from './assets/sales-outsourcing.avif';
