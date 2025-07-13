@@ -149,10 +149,10 @@ function App() {
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="relative z-10 text-center px-4 max-w-6xl mx-auto py-20">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-12 sm:mb-16 drop-shadow-lg">
-              Your Trusted Partner in <span className="text-[#044193]">Scalable Growth</span> and <span className="text-[#044193]">Seamless Operations</span>
+              Your Trusted Partner in <span className="text-[#ADD8E6]">Scalable Growth</span> and <span className="text-[#ADD8E6]">Seamless Operations</span>
             </h1>
             <p className="text-base sm:text-xl text-center text-white mb-12 sm:mb-16 max-w-3xl mx-auto hidden sm:block leading-relaxed">
-              At Omni Group LLC, we don't just offer outsourcing—we become an extension of your business. With a team of skilled professionals, proven systems, and a commitment to excellence, we help you reduce costs, boost efficiency, and grow without limits.
+              At Omni Group, we don't just offer outsourcing—we become an extension of your business. With a team of skilled professionals, proven systems, and a commitment to excellence, we help you reduce costs, boost efficiency, and grow without limits.
             </p>
             {/* Mobile: Enhanced Accordion */}
             <div className="block sm:hidden mt-20 max-w-2xl mx-auto">
@@ -197,7 +197,7 @@ function App() {
               <div className="bg-gray-50 rounded-2xl p-10">
                 <h3 className="text-2xl font-bold text-[#12223a] mb-6">Trusted BPO Partner</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Omni Group LLC is a trusted partner in Business Process Outsourcing (BPO), delivering high-quality customer experience and telemarketing solutions. Our success comes from attracting top talent and applying proven systems that meet global standards.
+                  Omni Group is a trusted partner in Business Process Outsourcing (BPO), delivering high-quality customer experience and telemarketing solutions. Our success comes from attracting top talent and applying proven systems that meet global standards.
                 </p>
               </div>
               <div className="bg-gray-50 rounded-2xl p-10">
@@ -209,7 +209,7 @@ function App() {
               <div className="bg-gray-50 rounded-2xl p-10">
                 <h3 className="text-2xl font-bold text-[#12223a] mb-6">Leading Innovation</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Our mission is to be the leading offshore partner in the digital age—powered by innovation, global capabilities, and exceptional service. Let Omni Group LLC handle your customer support needs so you can focus on scaling your business with confidence.
+                  Our mission is to be the leading offshore partner in the digital age—powered by innovation, global capabilities, and exceptional service. Let Omni Group handle your customer support needs so you can focus on scaling your business with confidence.
                 </p>
               </div>
             </div>
@@ -365,7 +365,7 @@ function App() {
           <div className="flex items-center gap-2"><FaEnvelope className="text-[#ADD8E6]" /> contact@omnigroup.com</div>
           <div className="flex items-center gap-2"><FaPhone className="text-[#ADD8E6]" /> +1 (555) 123-4567</div>
         </div>
-        <p className="text-sm text-gray-400">© {new Date().getFullYear()} Omni Group LLC. All rights reserved.</p>
+        <p className="text-sm text-gray-400">© {new Date().getFullYear()} Omni Group. All rights reserved.</p>
       </footer>
 
       {/* Back to Top Button */}
