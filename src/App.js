@@ -1,5 +1,6 @@
 import logo from './assets/logo.png';
 import logoWide from './assets/logo wide.png';
+import contactUs from './assets/contact.jpg';
 import { FaLinkedin, FaFacebook, FaTwitter, FaEnvelope, FaPhone, FaBars, FaTimes, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
@@ -312,8 +313,7 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-32 bg-white relative" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className="absolute inset-0 bg-white/90"></div>
+        <section id="contact" className="py-32 bg-white relative" style={{ backgroundImage: 'url("' + contactUs + '")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#12223a] mb-16">Contact Us</h2>
             <div className="bg-white rounded-2xl shadow-lg p-10 mb-16">
