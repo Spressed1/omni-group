@@ -6,7 +6,7 @@ import leadGenImg from './assets/lead-generatoin.avif';
 import salesOutsourcingImg from './assets/sales-outsourcing.avif';
 import customerSupportImg from './assets/customer-support.avif';
 import contactBg from './assets/contact.jpg';
-import { FaLinkedin, FaFacebook, FaTwitter, FaEnvelope, FaPhone, FaBars, FaTimes, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
+import { FaLinkedin, FaFacebook, FaTwitter, FaEnvelope, FaPhone, FaBars, FaTimes, FaMapMarkerAlt, FaCheckCircle, FaRegClock, FaUserTie, FaPiggyBank } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 
 // Mobile hero feature accordion data
@@ -145,46 +145,32 @@ function App() {
       {/* Main Content - Single Page Sections */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="home" className="relative min-h-[140vh] flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg" style={{ backgroundImage: `url(${homeBg})` }}>
+        <section id="home" className="relative min-h-[100vh] flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg" style={{ backgroundImage: `url(${homeBg})` }}>
           <div className="absolute inset-0 bg-black/50"></div>
-          <div className="relative z-10 text-center px-4 max-w-6xl mx-auto py-20">
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-12 sm:mb-16 drop-shadow-lg">
+          <div className="relative z-10 px-4 max-w-6xl mx-auto py-20 w-full">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-12 sm:mb-16 drop-shadow-lg text-center">
               Your Trusted Partner in <span className="text-[#ADD8E6]">Scalable Growth</span> and <span className="text-[#ADD8E6]">Seamless Operations</span>
             </h1>
-            <p className="text-base sm:text-xl text-center text-white mb-12 sm:mb-16 max-w-3xl mx-auto hidden sm:block leading-relaxed">
+            <p className="text-base sm:text-xl text-center text-white mb-16 max-w-3xl mx-auto leading-relaxed">
               At Omni Group, we don't just offer outsourcing—we become an extension of your business. With a team of skilled professionals, proven systems, and a commitment to excellence, we help you reduce costs, boost efficiency, and grow without limits.
             </p>
-            {/* Mobile: Enhanced Accordion */}
-            <div className="block sm:hidden mt-20 max-w-2xl mx-auto">
-              <div className="bg-[#1e2a44]/80 backdrop-blur-sm rounded-2xl p-8 mb-8">
-                <h3 className="text-xl font-bold text-white mb-6 text-center">Why Choose Omni Group?</h3>
-                <div className="space-y-6">
-                  {heroFeatures.map((f, i) => (
-                    <div key={f.title} className="bg-[#23304a]/90 rounded-xl overflow-hidden">
-                      <button
-                        className="w-full text-lg font-semibold text-white bg-[#1e2a44] py-6 px-6 flex justify-between items-center focus:outline-none hover:bg-[#2a3a5a] transition-colors"
-                        onClick={() => setOpenFeature(openFeature === i ? null : i)}
-                      >
-                        <span className="text-left">{f.title}</span>
-                        <span className={`ml-3 transition-transform duration-300 text-[#ADD8E6] ${openFeature === i ? 'rotate-90' : ''}`}>▶</span>
-                      </button>
-                      {openFeature === i && (
-                        <div className="bg-[#23304a] text-gray-200 text-lg px-6 py-6 text-left animate-fadeIn leading-relaxed">
-                          {f.desc}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 lg:gap-16 mt-8">
+              <div className="flex flex-col items-center text-center bg-[#1e2a44]/80 rounded-2xl p-8 shadow-lg">
+                <FaRegClock className="text-[#ADD8E6] text-5xl mb-6" />
+                <h3 className="text-2xl font-bold text-white mb-4">Always Open, Always Ready</h3>
+                <p className="text-gray-200 text-base leading-relaxed">No matter the time—day or night—we've got you covered. Our team is available 24/7 to handle every call, message, or inquiry, ensuring your business stays responsive and reliable around the clock. With our nonstop support, you'll never miss a beat—or a customer.</p>
               </div>
-            </div>
-            <div className="hidden sm:flex flex-col gap-16 mt-24 max-w-4xl mx-auto">
-              {heroFeatures.map((f) => (
-                <div className="text-center" key={f.title}>
-                  <h3 className="text-xl font-bold text-white mb-6">{f.title}</h3>
-                  <p className="text-gray-200 leading-relaxed">{f.desc}</p>
-                </div>
-              ))}
+              <div className="flex flex-col items-center text-center bg-[#1e2a44]/80 rounded-2xl p-8 shadow-lg">
+                <FaUserTie className="text-[#ADD8E6] text-5xl mb-6" />
+                <h3 className="text-2xl font-bold text-white mb-4">Highly Expertized Team</h3>
+                <p className="text-gray-200 text-base leading-relaxed">Our strength lies in a highly expertized, English-fluent team trained to deliver outstanding customer experiences. With deep industry knowledge and polished communication skills, they handle every interaction with precision and care—always putting your brand and customers first.</p>
+              </div>
+              <div className="flex flex-col items-center text-center bg-[#1e2a44]/80 rounded-2xl p-8 shadow-lg">
+                <FaPiggyBank className="text-[#ADD8E6] text-5xl mb-6" />
+                <h3 className="text-2xl font-bold text-white mb-4">Cost-Savings Without Compromise</h3>
+                <p className="text-gray-200 text-base leading-relaxed">Cut down on expenses while elevating performance. Our outsourcing solutions give you access to a skilled, ready-to-go team—without the costs of hiring, training, or managing in-house staff. Enjoy reliable support, streamlined operations, and scalable growth—all at a fraction of the price.</p>
+              </div>
             </div>
           </div>
         </section>
